@@ -1,0 +1,1 @@
+export { SGender } from './ui/SGender'

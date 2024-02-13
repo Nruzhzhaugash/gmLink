@@ -1,0 +1,91 @@
+// -- Google Fonts --
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cinzel:wght@500&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;500&family=Noto+Serif:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Ysabeau+Infant:wght@200;300&display=swap')
+// -- Global --
+
+body
+    background: var(--color-second)
+
+.container
+    position: absolute
+    top: 52%
+    left: 50.5%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    z-index: 100
+
+.background
+    background: var(--color-second)
+    width: 381px
+    height: 100%
+    border-radius: 50px
+
+// -- Main --
+
+.inner
+    padding: 0 40px 0 40px
+
+.badge
+    position: relative
+    top: 3.8rem
+    z-index: 100
+
+.whiteBlock
+    position: absolute
+    z-index: -100
+    top: 90px
+    left: -1px
+
+.seBadges
+    display: flex
+    justify-content: space-between
+
+.arrow
+    padding-left: 25.69px
+
+.help
+    margin-right: 15.5px
+    border: none
+    outline: none
+    background: transparent
+    cursor: pointer
+    border-radius: 30px
+
+.title
+    color: var(--color-white)
+    text-align: center
+    font-family: Asap
+    font-size: 27px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    width: 295px
+    margin-top: 44.88px
+
+.draw
+    margin-top: 66px
+    margin-bottom: 54px
+
+.auth
+    display: flex
+    flex-direction: column
+
+.enter 
+    background: transparent
+    color: rgba(255, 255, 255, 0.50)
+    text-align: left
+    font-family: Roboto Flex
+    font-size: 18px
+    font-weight: 400
+
+.next
+    border-radius: 100px
+    background: #5571FF80
+    width: 295px
+    height: 40px
+    color: rgba(255, 255, 255, 0.50)
+    font-size: 20px
+    font-weight: 400
+    margin-top: 20px 
+    &.active 
+        background: var(--color-primary)
+        color: var(--color-white)

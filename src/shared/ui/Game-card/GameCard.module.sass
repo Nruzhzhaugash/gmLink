@@ -1,0 +1,48 @@
+.container__item 
+  cursor: pointer
+  list-style-type: none
+  display: flex
+  &:hover 
+    transform: scale(1.0)
+
+.card_item 
+  position: relative
+  height: 100%
+  transition: all 0.5s ease-in-out
+
+.card_item__img
+  margin-bottom: 10px
+  display: flex
+  width: 100% 
+  outline: none
+  height: auto
+  object-fit: cover
+  border-radius: 10px
+  border: 2px solid var(--color-white)
+  transition: all 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.card_item__description 
+  display: flex
+  justify-content: center
+  align-items: center
+  .card_item__name 
+    color: var(--color-white)
+    // margin-top: 23px
+    font-family: Asap
+    font-size: 14px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+.active
+  border: 2px solid var(--color-primary)
+  width: 100%
+  height: auto
+  animation: slide-fwd-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+@keyframes slide-fwd-center 
+  0% 
+    transform: scale(1)
+  100% 
+    transform: scale(1.05)
+  

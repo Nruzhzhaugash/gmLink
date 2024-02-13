@@ -1,0 +1,47 @@
+// .drawer_active 
+//   position: absolute
+//   z-index: 10100
+//   height: 300px
+//   transition-duration: 500ms  
+//   transform: translateY(0px, 100%, 0px)
+//   visibility: visible
+//   top: 4rem
+//   left: 0rem
+//   height: 12.5rem
+//   width: 381px
+.drawer_active 
+  position: absolute
+  z-index: 10100
+  height: 300px
+  transition: all 0.5s ease
+  transform: translateY(calc(100% - 269px))
+  visibility: visible
+  top: 4.5rem
+  left: 0.05rem
+  width: 381px
+
+
+.drawer_not_active
+  position: absolute
+  transform: translate3d(0px, 100%, 0px)
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.54, 0.82)
+  z-index: -100
+  visibility: hidden
+  opacity: 0
+  top: -18rem
+  left: 0rem
+  height: 17rem
+  width: 382px
+  &.drawer_container
+    height: 0
+    width: 0
+
+.drawer_container 
+  transform: translateZ(0)!important
+  transition: all
+  border-radius: 0px 0px 25px 25px
+  background: #1C1B1F
+  position: relative
+  z-index: 10000
+  width: 100%
+  padding: 24px 25px 44px 25px
